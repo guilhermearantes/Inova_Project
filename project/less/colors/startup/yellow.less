@@ -1,0 +1,475 @@
+// 
+// VARIABLES 
+//
+@main-color:        #ECCE52;    // page important color
+@background:        #fff;        // section background color
+@background-2:      #F3F4EF;
+@dark_title_txt:    #000;
+@light_title_txt:   #fff;
+@footer-bg:         #18181C;
+
+
+p{
+    color: fade(@dark_title_txt, 90%);
+}
+
+
+
+/**
+ * ===============================
+ *  Section Heading Section Defult Style 
+ * ===============================
+ */
+.section-heading {
+    color: fade(@dark_title_txt, 90%);
+
+    &:after {
+        background: url('../../../images/shape-yellow.png');
+    }
+}
+.section-header {
+    .section-heading-normal {
+        color: fade(@dark_title_txt, 90%);
+    }
+    p {
+        color: fade(@dark_title_txt, 90%);
+    }
+}
+
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+
+    &.btn-fill {
+        background-color: @main-color;
+        border-color: @main-color;
+
+        &:hover {
+            background-color: darken(@main-color, 15%) !important;
+            border-color: darken(@main-color, 15%) !important;
+        }
+    }
+
+    &.btn-border {
+        border-color: @main-color;
+
+        &:hover {
+            background-color: @main-color;
+        }
+    }
+}
+
+.btn-text-link {
+    a {
+        color: @main-color;
+
+        &:hover {
+            color: darken(@main-color, 15%) !important;
+        }
+    }
+}
+
+
+/**
+ * ================================
+ * Navbar Style 
+ * ================================
+ */
+.header-nav {
+    /* After Fixed In Top */
+    &.navbar-home {  
+        .nav {
+            li {
+                .btn {
+                    background-color: @main-color;
+
+                    &:hover {
+                        background-color: darken(@main-color, 15%) !important;
+                        border-color: darken(@main-color, 15%) !important;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+
+
+/**
+ * ==========================
+ * How it works Section
+ * ==========================
+ */
+.how-it-works {
+    background-color: @background;
+}
+
+/* Features Defult Style */
+.features {
+    .each-item {
+        .fa {
+            color: @main-color;
+        }
+    }
+}
+
+.features-hover {
+    .each-item {
+        &:hover {
+            .fa {
+                background-color: @main-color;
+            }
+        }
+    }
+
+}
+
+
+
+/**
+ * ========================================
+ * Two cols description width image
+ * ========================================
+ */
+.two-cols-description-with-image {
+    background-color: @background-2;
+}
+
+.description-info-inner {
+    ul {
+        li {
+            color: fade(@dark_title_txt, 90%);
+
+            &:before {
+                color: @main-color;
+            }
+
+            &:hover {
+                &:before {
+                    background-color: @main-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ===============================
+ * Our featured Section Style
+ * ===============================
+ */
+.our-featured {
+    background-color: @background;
+}
+
+
+
+/** 
+ * ======================
+ * Fun Facts
+ * ======================
+ */
+.fun-facts {
+    background-color: @background-2;
+}
+
+
+
+/**
+ * ======================
+ * Pricing Table Section 
+ * ======================
+ */
+.pricing-table {
+    background-color: @background;
+}
+
+.table-single {
+    border: 1px solid fade(@dark_title_txt, 12%);
+
+    .important {
+        background-color: @main-color;
+
+        &:after {
+            border-top: 38px solid @main-color;
+        }
+    }
+    .meta-price {
+        color: @dark_title_txt;
+
+        .rate {
+            &:after {
+                border: 1px solid fade(@dark_title_txt, 12%);
+            }
+        }
+    }
+    .button {
+        .btn {
+            border-color: fade(@dark_title_txt, 12%);
+            color: @dark_title_txt;
+        }
+    }
+    &:hover {
+        .meta-price {
+            .rate {
+                background-color: @main-color;
+            }
+        }
+
+        .button {
+            .btn {
+                border-color: @main-color;
+                background-color: @main-color;
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * ====================================
+ * Register Form Style
+ * ====================================
+ */
+.register-background {
+    background-color: @background;
+}
+
+.register-body{
+    .section-header {
+        .section-heading {
+            color: @light_title_txt;
+        }
+
+        p {
+            color: fade(@light_title_txt, 90%);
+        }
+    }
+}
+
+
+.form-cus {
+    border-color: @main-color;
+    
+    &:focus {
+        border-color: @main-color;
+    }
+}
+
+
+
+
+/**
+ * =========================================
+ * Collapse CSS
+ * =========================================
+ */
+// Collapse variable
+@collapse: @background-2; 
+@collapse-1: @background; 
+
+
+#collapse-area{
+    background-color: @collapse-1;
+}
+
+.collapse-tab {
+    .panel{
+        .panel-heading{
+            background: @collapse-1;
+            
+            .panel-title{
+                a{
+                    background-color: @collapse-1 !important;
+                    border-bottom-color: @main-color;
+                    color: fade(@dark_title_txt, 90%);
+
+                    .collapse-icon {
+                        span {
+                            background-color: fade(@dark_title_txt, 40%);
+
+                            &:after {
+                                background-color: fade(@dark_title_txt, 40%);
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+        }
+    }
+    
+    
+    .panel-collapse{
+        background-color: @collapse-1;
+        border-bottom-color: @main-color;
+
+        .panel-body{
+            color: fade(@dark_title_txt, 90%);
+        }
+    } 
+}
+
+
+
+
+
+/**
+ * ===========================
+ * Footer Section 
+ * ===========================
+ */
+.footer {
+    background-color: @footer-bg;
+    .copyright {
+        p {
+            color: fade(@light_title_txt, 90%);
+
+            a {
+                color: @main-color;
+
+                &:hover {
+                    color: darken(@main-color, 15%) !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ================================
+ * Some Features Section
+ * ================================
+ */
+.some-feature {
+    .section-header {
+        .section-heading {
+            color: fade(@light_title_txt, 90%);
+        }
+        p {
+            color: fade(@light_title_txt, 90%);
+        }
+    }
+    .features {
+        .detail {
+            h4 {
+                color: @main-color;
+            }
+
+            p {
+                color: fade(@light_title_txt, 90%);
+            }
+        }
+    }
+}
+
+
+
+/**
+ * =============================
+ * Client's Feedback Section
+ * =============================
+ */
+ .client-feedback {
+    background-color: @background-2;
+ }
+.client-feedback-contant{
+    .left-contant {
+        .quote-sym {
+            .fa {
+                color: @main-color;
+            }
+        }
+
+        #sync1{
+            background-color: @background;
+
+            .item {
+                blockquote {
+                    color: fade(@dark_title_txt, 90%);
+                }
+                figcaption {
+                    cite {
+                        color: @main-color;
+                    }
+                }
+            }
+
+            .owl-controls .owl-page {
+                span {
+                    background: @main-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * =============================
+ * Our Story Section
+ * =============================
+ */
+.our-story {
+    background-color: @background-2;
+}
+.our-story-contant {
+    .each-year {
+        .year {
+            span {
+                &:after {
+                    background-color: @main-color;
+                }
+                &:before {
+                    background-color: @main-color;
+                }
+            }
+            &:after {
+                background-color: @main-color;
+            }
+        }
+    }
+}
+
+
+
+
+@import "../../../bootstrap/less/variables.less";
+
+@media (max-width: @screen-xs-max) {
+
+    /**
+     * ================================
+     * Navbar Style 
+     * ================================
+     */
+    .header-nav {
+        .navbar-collapse {
+            &.in {
+                border-top-color: fade(@main-color, 90%);
+            }
+        }
+
+        /* After Fixed In Top */
+        &.navbar-home {
+            
+        }  
+    }
+    
+}
+
+
+
